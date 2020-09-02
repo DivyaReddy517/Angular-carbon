@@ -1,0 +1,49 @@
+<p>Please register for the course</p>
+<br>
+<br>
+Enter Your Name:
+<ibm-label
+			[helperText]="helperText"
+			[invalid]="invalid"
+			[invalidText]="invalidText">
+			<input
+				ibmText
+				[invalid]="invalid"
+				[disabled]="disabled"
+				[theme]="theme"
+				[placeholder]="placeholder"
+				[autocomplete]="autocomplete">
+    </ibm-label>
+    <br>
+    Years of Experience
+    <br>
+    <br>
+  
+<ibm-radio-group aria-label="radiogroup">
+    <ibm-radio type="radio" name="job" value="Fresher" [(ngModel)]="choice" (ngModalChange)="choose($event)">
+      Fresher
+    </ibm-radio>
+    <ibm-radio type="radio" ng-model="color.name" value="red">
+  Experienced
+    </ibm-radio>
+   </ibm-radio-group>
+  <br>
+  
+  <ibm-checkbox intdeterminate="true" (change)="hk($event.value)">
+    Java
+  </ibm-checkbox>
+  <ibm-checkbox indeterminate="true">
+    HTML
+  </ibm-checkbox>
+  <ibm-checkbox indeterminate="true">
+    Angular
+    </ibm-checkbox>
+  <br>
+  
+  
+  Please click on this
+  <br>
+  <button ibmButton (click)="Modal()">Register</button>
+  
+  
+  
